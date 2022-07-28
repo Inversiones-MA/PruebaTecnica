@@ -1,0 +1,24 @@
+/desafio-backend/vscode/
+/desafio-backend/bin
+/desafio-backend/appsettings.Development.json
+
+# dependencies
+/desafio-frontend/node_modules
+/desafio-frontend/.pnp
+/desafio-frontend/.pnp.js
+
+# testing
+/coverage
+
+# production
+/desafio-frontend/build
+
+# misc
+/desafio-frontend/.DS_Store
+/desafio-frontend/.env.local
+/desafio-frontend/.env.development.local
+/desafio-frontend/.env.test.local
+/desafio-frontend/.env.production.local
+
+/desafio-frontend/npm-debug.log*
+/desafio-frontend/yarn-debug.log*
