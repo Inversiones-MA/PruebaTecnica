@@ -53,15 +53,13 @@ export default class createpersona extends Component {
       referrerPolicy: 'no-referrer'
   }
   try {
-    const url = "https://localhost:7274/api/regiones"
+    const url = process.env.REACT_APP_URL + "regiones"
     const serviceResponse = await fetch(url, requestObj);
     const jsonResult = await serviceResponse.json();
     if (serviceResponse.ok) {
       this.setState({
         regiones: jsonResult
       });
-  } else {
-      //this.alertBanner.current.show(true, 'danger', jsonResult);
   };
   } catch (exception) {
       return exception;
@@ -80,15 +78,13 @@ export default class createpersona extends Component {
       referrerPolicy: 'no-referrer'
   }
   try {
-    const url = "https://localhost:7274/api/regiones/ciudades"
+    const url = process.env.REACT_APP_URL + "regiones/ciudades"
     const serviceResponse = await fetch(url, requestObj);
     const jsonResult = await serviceResponse.json();
     if (serviceResponse.ok) {
       this.setState({
         ciudades: jsonResult
       });
-  } else {
-      //this.alertBanner.current.show(true, 'danger', jsonResult);
   };
   } catch (exception) {
       return exception;
@@ -107,15 +103,13 @@ export default class createpersona extends Component {
       referrerPolicy: 'no-referrer'
   }
   try {
-    const url = "https://localhost:7274/api/regiones/ciudades/comunas"
+    const url = process.env.REACT_APP_URL + "regiones/ciudades/comunas"
     const serviceResponse = await fetch(url, requestObj);
     const jsonResult = await serviceResponse.json();
     if (serviceResponse.ok) {
       this.setState({
         comunas: jsonResult
       });
-  } else {
-      //this.alertBanner.current.show(true, 'danger', jsonResult);
   };
   } catch (exception) {
       return exception;
@@ -167,7 +161,7 @@ export default class createpersona extends Component {
       body: JSON.stringify(persona)
   }
   try {
-    const url = "https://localhost:7274/api/personas"
+    const url = process.env.REACT_APP_URL + "personas"
     const serviceResponse = await fetch(url, requestObj);
     if (serviceResponse.ok) {
       this.setState({

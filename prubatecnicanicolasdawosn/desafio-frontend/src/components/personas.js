@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import { Table, Button, Alert } from "flowbite-react";
 import { Link } from "react-router-dom";
 
-export default class cuidadanos extends Component {
+export default class personas extends Component {
   state = {
-    cuidadanos: [],
+    personas: [],
     showModal: false
   }
   async componentDidMount() {
-    await this.GetCuidadanos();
+    await this.Getpersonas();
 }
 
 async BorrarPersona(e, id){
@@ -23,7 +23,7 @@ async BorrarPersona(e, id){
     referrerPolicy: 'no-referrer'
 }
 try {
-  const url = "https://localhost:7274/api/personas/" + id.toString()
+  const url = process.env.REACT_APP_URL + "personas/" + id.toString()
   const serviceResponse = await fetch(url, requestObj);
   if (serviceResponse.ok) {
     this.setState({
@@ -32,7 +32,7 @@ try {
       descripcion: "Persona borrada correctamente ",
       color: "success"
     })
-    await this.GetCuidadanos();
+    await this.Getpersonas();
 } else {
   this.setState({
     status: true,
@@ -51,7 +51,7 @@ try {
 }
 }
 
-async GetCuidadanos () {
+async Getpersonas () {
   const requestObj = {
     method: 'GET',
     cache: 'no-cache',
@@ -63,22 +63,18 @@ async GetCuidadanos () {
     referrerPolicy: 'no-referrer'
 }
 try {
-  const url = "https://localhost:7274/api/personas"
+  const url = process.env.REACT_APP_URL + "personas"
   const serviceResponse = await fetch(url, requestObj);
   const jsonResult = await serviceResponse.json();
   if (serviceResponse.ok) {
     this.setState({
-        cuidadanos: jsonResult
+        personas: jsonResult
     });
-} else {
-    //this.alertBanner.current.show(true, 'danger', jsonResult);
 };
 } catch (exception) {
     return exception;
 }
 }
-
-
   render() {
     return (
 <div>
@@ -125,19 +121,19 @@ try {
     </Table.HeadCell>
   </Table.Head>
 
-{  this.state.cuidadanos.map((cuidadano) => {
+{  this.state.personas.map((persona) => {
     return <Table.Body className="divide-y">
     <Table.Row className="bg-white dark:border-gray-700 dark:bg-gray-800">
       <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-       {cuidadano.nombre}
+       {persona.nombre}
       </Table.Cell>
       <Table.Cell>
-       {cuidadano.run}
+       {persona.run}
       </Table.Cell>
       <Table.Cell>
         <Link
           to={"/editpersona"}
-          element = {cuidadano.id}
+          element = {persona.id}
           className="font-medium text-green-600 hover:underline dark:text-green-500"
         >
           Editar
@@ -145,7 +141,7 @@ try {
       </Table.Cell>
       <Table.Cell>
         <Link
-          onClick={(e) => this.BorrarPersona(e, cuidadano.id)}
+          onClick={(e) => this.BorrarPersona(e, persona.id)}
           className="font-medium text-red-600 hover:underline dark:text-red-500"
         >
           Borrar

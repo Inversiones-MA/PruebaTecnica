@@ -30,14 +30,14 @@ export default function Example() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="sm:text-center">
           <h2 className="text-lg font-semibold leading-8 text-indigo-600">
-            Template CRUD
+            FinFast CRUD
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Funcionalidades
           </p>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
             Aplicacion web en React con Tailwinds y Flowbite que consume API en
-            .NET Core 6.0, ambas desplegadas en Azure y AWS.
+            .NET Core 6.0.
           </p>
         </div>
 
