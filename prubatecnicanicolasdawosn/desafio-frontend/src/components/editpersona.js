@@ -36,10 +36,7 @@ export default class editpersona extends Component {
     }
 
     async componentDidMount() {
-        debugger
         let { id } = this.props.val1;
-        debugger
-    
         this.setState({
             personaId: id
         });

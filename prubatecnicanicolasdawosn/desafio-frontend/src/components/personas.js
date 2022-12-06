@@ -32,6 +32,10 @@ try {
       descripcion: "Persona borrada correctamente ",
       color: "success"
     })
+    setTimeout(() => {
+      this.setState({         
+        status: false});
+    }, 1000)
     await this.Getpersonas();
 } else {
   this.setState({
@@ -40,6 +44,10 @@ try {
     descripcion: "Persona no se logro borrar ",
     color: "failure"
   })
+  setTimeout(() => {
+    this.setState({         
+      status: false});
+  }, 1000)
 };
 } catch (exception) {
   this.setState({
@@ -48,6 +56,10 @@ try {
     descripcion: "Persona no se logro borrar ",
     color: "failure"
   })
+  setTimeout(() => {
+    this.setState({         
+      status: false});
+  }, 1000)
 }
 }
 

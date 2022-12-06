@@ -1,5 +1,6 @@
 import React, { Component  } from "react";
 import { Label, TextInput, Radio, Button, Textarea, Select, Alert } from "flowbite-react";
+import { Navigate } from "react-router-dom"
 
 export default class createpersona extends Component {
   state = {
@@ -32,7 +33,8 @@ export default class createpersona extends Component {
       fechaNacimiento: ''
     },
     showCiudad: true,
-    showComuna: true  
+    showComuna: true,
+    redirect: false
   }
 
   async componentDidMount() {
@@ -164,13 +166,16 @@ export default class createpersona extends Component {
     const url = process.env.REACT_APP_URL + "personas"
     const serviceResponse = await fetch(url, requestObj);
     if (serviceResponse.ok) {
-      this.setState({
-        status: true,
-        titulo: "Creado",
-        descripcion: "Persona creada correctamente ",
-        color: "success"
-      })
-//
+        this.setState({         
+          status: true,
+          titulo: "Creado",
+          descripcion: "Persona creada correctamente ",
+          color: "success"
+        })
+      setTimeout(() => {
+        this.setState({         
+          redirect: true});
+      }, 1000)
   } else {
     this.setState({
       status: true,
@@ -475,7 +480,9 @@ export default class createpersona extends Component {
 </Alert>
         }
 
-
+{ 
+   this.state.redirect && <Navigate to='/personas' replace={true}/>
+}
 </form>
 </div>
 
