@@ -1,0 +1,17 @@
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\bin\Debug\net6.0\Finfast.Desafio.Infrastucture.deps.json
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\bin\Debug\net6.0\Finfast.Desafio.Infrastucture.dll
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\bin\Debug\net6.0\Finfast.Desafio.Infrastucture.pdb
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\bin\Debug\net6.0\Finfast.Desafio.Domain.dll
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\bin\Debug\net6.0\Finfast.Desafio.Domain.pdb
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\obj\Debug\net6.0\Finfast.Desafio.Infrastucture.csproj.AssemblyReference.cache
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\obj\Debug\net6.0\Finfast.Desafio.Infrastucture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\obj\Debug\net6.0\Finfast.Desafio.Infrastucture.AssemblyInfoInputs.cache
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\obj\Debug\net6.0\Finfast.Desafio.Infrastucture.AssemblyInfo.cs
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\obj\Debug\net6.0\Finfast.Desafio.Infrastucture.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\obj\Debug\net6.0\Finfast.Desafio.Infrastucture.csproj.CopyComplete
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\obj\Debug\net6.0\Finfast.Desafio.Infrastucture.dll
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\obj\Debug\net6.0\refint\Finfast.Desafio.Infrastucture.dll
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\obj\Debug\net6.0\Finfast.Desafio.Infrastucture.pdb
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\obj\Debug\net6.0\ref\Finfast.Desafio.Infrastucture.dll
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\bin\Debug\net6.0\Finfast.Desafio.Infrastucture.runtimeconfig.json
+C:\Users\Nicolas\Documents\repos\Finfast.Desafio.Application\Finfast.Desafio.Infrastucture\obj\Debug\net6.0\Finfast.Desafio.Infrastucture.genruntimeconfig.cache
