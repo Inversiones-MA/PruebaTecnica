@@ -1,9 +1,9 @@
 # PruebaTecnica
-Prueba técnica para postulantes al cargo de ingeniero de desarrollo MultiSF
+Prueba técnica para postulantes al cargo de ingeniero de desarrollo FinFast
 
 **Objetivos**
 
-Se intenta medir el grado de conocimiento, realizando una tarea común en desarrollo de software, que permitirá indagar sobre su manejo de tecnologías ligadas a la conexión con la base de datos, consultas a ella (ORM), construcción de una Web API y consumo de estos métodos mediante tecnología JavaScript.
+Se intenta medir el grado de conocimiento, realizando una tarea común en desarrollo de software, que permitirá indagar sobre su manejo de tecnologías ligadas a la conexión con la base de datos, consultas a ella (ORM), construcción de una Web API y consumo de estos métodos mediante tecnología JavaScript / Typescript.
 
 ***
 En este repositorio encontrará en la carpeta SQL un script que crea la estructura y los datos de una base llamada "PruebaTecnica". Esta base de datos funciona en versiones de SQL Server mayor o igual a 2008.
@@ -60,11 +60,11 @@ No considere tokens de seguridad, o autenticación. En la vista utilice todos lo
 ***
 **Información importante para la entrega**
 
-Debe crear una rama a partir de master con las inciales de su nombre, debe informar a los correos **gzuleta@multisf.cl** y **sgonzalez@multisf.cl**, que inicia la tarea, e informar a estos mismos correos cuando finalice. El plazo considerado para que pueda realizar esta labor es de 24 horas, a partir del aviso de inicio. También puede contactarse a estos mismos correos para recibir orientación adicional en caso de dudas.
+Debe crear una rama a partir de master con las inciales de su nombre, debe informar a los correos **gzuleta@finfast.com**, **sgonzalez@finfast.com** y **kmijares@finfast.com**, que inicia la tarea, e informar a estos mismos correos cuando finalice. El plazo considerado para que pueda realizar esta labor es de 48 horas, a partir del aviso de inicio. También puede contactarse a estos mismos correos para recibir orientación adicional en caso de dudas.
 
 agradeciendo su postulación al cargo, y el tiempo que otorga a esta actividad.
 
 Saluda a usted.
 
 Guillermo Zuleta Flores.<br/>
-Líder técnico. MultiSF
+Líder técnico. FinFast
