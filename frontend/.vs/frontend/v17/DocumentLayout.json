@@ -1,0 +1,224 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\src\\components\\gridpersons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\components\\gridpersons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 31,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "package-lock.json",
+              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\package-lock.json",
+              "RelativeDocumentMoniker": "frontend\\package-lock.json",
+              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\package-lock.json",
+              "RelativeToolTip": "frontend\\package-lock.json",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-14T06:53:09.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\index.html",
+              "RelativeDocumentMoniker": "frontend\\index.html",
+              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\index.html",
+              "RelativeToolTip": "frontend\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-14T06:50:39.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\package.json",
+              "RelativeDocumentMoniker": "frontend\\package.json",
+              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\package.json",
+              "RelativeToolTip": "frontend\\package.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-14T06:50:15.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.tsx",
+              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\main.tsx",
+              "RelativeDocumentMoniker": "frontend\\src\\main.tsx",
+              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\main.tsx",
+              "RelativeToolTip": "frontend\\src\\main.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-14T06:46:14.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.tsx",
+              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\App.tsx",
+              "RelativeDocumentMoniker": "frontend\\src\\App.tsx",
+              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\App.tsx",
+              "RelativeToolTip": "frontend\\src\\App.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-14T06:05:59.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GridPersons.tsx",
+              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\components\\GridPersons.tsx",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\GridPersons.tsx",
+              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\components\\GridPersons.tsx",
+              "RelativeToolTip": "frontend\\src\\components\\GridPersons.tsx",
+              "ViewState": "AQIAACcAAAAAAAAAAAAQwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-14T06:02:40.599Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
