@@ -7,5 +7,7 @@ namespace ApplicationCore.Interfaces.Repositories
         Task<Guid> AddPerson(Person person);
         Task<List<Person>> GetAllPersonsAsync();
         Task UpdatePerson(Person person);
+
+        void Remove(Person person);
     }
 }

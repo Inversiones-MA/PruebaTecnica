@@ -5,6 +5,7 @@ using AutoMapper;
 using Infrastructure.SqlServerContext;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace Infrastructure.Repositories
 {
@@ -49,9 +50,8 @@ namespace Infrastructure.Repositories
                 [ApellidoPaterno], [ApellidoMaterno], [Email], [SexoCodigo], [FechaNacimiento], 
                 [RegionCodigo], [CiudadCodigo], [ComunaCodigo], [Direccion], [Telefono], [Observaciones])
                 VALUES (@Id, @RunCuerpo, @RunDigito, @Nombres, @ApellidoPaterno, 
-                @ApellidoMaterno, @Email, @SexoCodigo, GETDATE(), @RegionCodigo, @CiudadCodigo, 
-                @ComunaCodigo, @Direccion, @Telefono, @Observaciones);
-                SELECT SCOPE_IDENTITY();";
+                @ApellidoMaterno, @Email, @SexoCodigo, @FechaNacimiento, @RegionCodigo, @CiudadCodigo, 
+                @ComunaCodigo, @Direccion, @Telefono, @Observaciones);";
 
                 // Parámetros para la consulta SQL
                 SqlParameter[] parameters =
@@ -59,18 +59,17 @@ namespace Infrastructure.Repositories
                     new SqlParameter("@Id", persona.Id),
                     new SqlParameter("@RunCuerpo", persona.RunCuerpo),
                     new SqlParameter("@RunDigito", persona.RunDigito),
-                    //new SqlParameter("@Nombre", persona.Nombre),
                     new SqlParameter("@Nombres", persona.Nombres),
                     new SqlParameter("@ApellidoPaterno", persona.ApellidoPaterno),
                     new SqlParameter("@ApellidoMaterno", persona.ApellidoMaterno),
                     new SqlParameter("@Email", persona.Email),
                     new SqlParameter("@SexoCodigo", persona.SexoCodigo),
-                   // new SqlParameter("@FechaNacimiento", persona.FechaNacimiento),
+                    new SqlParameter("@FechaNacimiento", persona.FechaNacimiento),
                     new SqlParameter("@RegionCodigo", persona.RegionCodigo),
                     new SqlParameter("@CiudadCodigo", persona.CiudadCodigo),
-                    new SqlParameter("@ComunaCodigo", persona.ComunaCodigo),
+                    new SqlParameter("@ComunaCodigo", persona.ComunaCodigo ?? (object)DBNull.Value),
                     new SqlParameter("@Direccion", persona.Direccion),
-                    new SqlParameter("@Telefono", persona.Telefono),
+                    new SqlParameter("@Telefono", persona.Telefono ?? (object)DBNull.Value),
                     new SqlParameter("@Observaciones", persona.Observaciones)
                 };
 
@@ -100,6 +99,13 @@ namespace Infrastructure.Repositories
 
             await DbContext.SaveChangesAsync();
 
+        }
+
+        public void Remove(Person person)
+        {
+            Persona persona = _mapper.Map<Persona>(person);
+            DbSet.Remove(persona);
+            DbContext.SaveChanges();
         }
 
     }

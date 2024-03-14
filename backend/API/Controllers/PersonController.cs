@@ -1,3 +1,4 @@
+using ApplicationCore.DTO;
 using ApplicationCore.Entities;
 using ApplicationCore.Interfaces.Services;
 using ApplicationCore.Services;
@@ -21,7 +22,7 @@ namespace GameStorageApi.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Guid>> Create([FromBody] Person person)
+        public async Task<ActionResult<Guid>> Create([FromBody] PersonPostDto person)
         {
             try
             {
@@ -38,12 +39,12 @@ namespace GameStorageApi.Controllers
 
 
         [HttpGet("")]
-        public async Task<ActionResult<List<Person>>> GetAllGenres()
+        public async Task<ActionResult<List<PersonGetDto>>> GetAll()
         {
             try
             {
-                var genres = await _personService.GetAll();
-                return Ok(genres);
+                var persons = await _personService.GetAll();
+                return Ok(persons);
             }
             catch (Exception ex)
             {

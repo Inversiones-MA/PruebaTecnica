@@ -43,6 +43,25 @@ namespace Infrastructure.Mappers
                 .ForMember(dest => dest.Telefono, opt => opt.MapFrom(src => src.Phone))
                 .ForMember(dest => dest.Observaciones, opt => opt.MapFrom(src => src.Observations))
                 .ReverseMap();
+
+            CreateMap<SqlServerContext.Region, ApplicationCore.Entities.Region>()
+                .ForMember(dest => dest.Code, opt => opt.MapFrom(src => src.Codigo))
+                .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.NombreOficial))
+                .ForMember(dest => dest.OficialName, opt => opt.MapFrom(src => src.NombreOficial))
+                .ReverseMap();
+
+            CreateMap<Ciudad, City>()
+               .ForMember(dest => dest.Code, opt => opt.MapFrom(src => src.Codigo))
+               .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Nombre))
+               .ForMember(dest => dest.RegionCode, opt => opt.MapFrom(src => src.RegionCodigo))
+               .ReverseMap();
+
+            CreateMap<Comuna, Commune>()
+               .ForMember(dest => dest.Code, opt => opt.MapFrom(src => src.Codigo))
+               .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Nombre))
+               .ForMember(dest => dest.RegionCode, opt => opt.MapFrom(src => src.RegionCodigo))
+               .ForMember(dest => dest.CityCode, opt => opt.MapFrom(src => src.CiudadCodigo))
+               .ReverseMap();
         }
     }
 }

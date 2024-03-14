@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\src\\components\\gridpersons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\components\\gridpersons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\package-lock.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\src\\components\\personform.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\components\\personform.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\src\\types.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\types.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\src\\components\\gridpersons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\components\\gridpersons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 31,
+          "SelectedChildIndex": 28,
           "Children": [
             {
               "$type": "Bookmark",
@@ -143,75 +135,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "package-lock.json",
-              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\package-lock.json",
-              "RelativeDocumentMoniker": "frontend\\package-lock.json",
-              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\package-lock.json",
-              "RelativeToolTip": "frontend\\package-lock.json",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-14T06:53:09.536Z",
+              "Title": "types.tsx",
+              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\types.tsx",
+              "RelativeDocumentMoniker": "frontend\\src\\types.tsx",
+              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\types.tsx",
+              "RelativeToolTip": "frontend\\src\\types.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-14T17:53:44.689Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\index.html",
-              "RelativeDocumentMoniker": "frontend\\index.html",
-              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\index.html",
-              "RelativeToolTip": "frontend\\index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-14T06:50:39.996Z",
+              "Title": "PersonForm.tsx",
+              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\components\\PersonForm.tsx",
+              "RelativeDocumentMoniker": "frontend\\src\\components\\PersonForm.tsx",
+              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\components\\PersonForm.tsx",
+              "RelativeToolTip": "frontend\\src\\components\\PersonForm.tsx",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAwCQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-03-14T16:44:08.929Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "package.json",
-              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\package.json",
-              "RelativeDocumentMoniker": "frontend\\package.json",
-              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\package.json",
-              "RelativeToolTip": "frontend\\package.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-14T06:50:15.166Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "main.tsx",
-              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\main.tsx",
-              "RelativeDocumentMoniker": "frontend\\src\\main.tsx",
-              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\main.tsx",
-              "RelativeToolTip": "frontend\\src\\main.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2024-03-14T06:46:14.299Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "App.tsx",
               "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\App.tsx",
               "RelativeDocumentMoniker": "frontend\\src\\App.tsx",
               "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\App.tsx",
               "RelativeToolTip": "frontend\\src\\App.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-03-14T06:05:59.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "GridPersons.tsx",
               "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\components\\GridPersons.tsx",
               "RelativeDocumentMoniker": "frontend\\src\\components\\GridPersons.tsx",
               "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\components\\GridPersons.tsx",
               "RelativeToolTip": "frontend\\src\\components\\GridPersons.tsx",
-              "ViewState": "AQIAACcAAAAAAAAAAAAQwD0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-03-14T06:02:40.599Z",
               "EditorCaption": ""

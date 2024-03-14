@@ -1,31 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Person } from './types';
 
-interface Persona {
-    id: number;
-    names: string;
-    lastName: string;
-    run: string;
-    // Agrega más propiedades según tus necesidades
+interface Props {
+    personas: Person[]; // Definir el tipo de la variable personas como un array de tipo Person
 }
 
-const GridPersons: React.FC = () => {
-    const [personas, setPersonas] = useState<Persona[]>([]);
-
-    useEffect(() => {
-        fetchData();
-    }, []);
-
-    const fetchData = async () => {
-        try {
-            const response = await axios.get<Persona[]>('https://localhost:7163/person');
-            setPersonas(response.data);
-            console.log(response.data);
-        } catch (error) {
-            console.error('Error al obtener datos:', error);
-        }
-    };
-
+const GridPersons: React.FC<Props> = ({ personas }) => { // Recibir personas como prop
     return (
         <div className="container">
             <h2>Lista de Personas</h2>
@@ -36,7 +17,7 @@ const GridPersons: React.FC = () => {
                             <th>Nombre</th>
                             <th>Apellido</th>
                             <th>Run</th>
-                            <th>Acciones</th> {/* Agrega una columna para las acciones */}
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -48,7 +29,7 @@ const GridPersons: React.FC = () => {
                                 <td>
                                     <button className="btn btn-primary mr-2">Editar</button>
                                     <button className="btn btn-danger">Eliminar</button>
-                                </td> {/* Agrega botones en la última columna */}
+                                </td>
                             </tr>
                         ))}
                     </tbody>

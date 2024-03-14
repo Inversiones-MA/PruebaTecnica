@@ -17,10 +17,20 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAutoMapper(typeof(ApplicationProfile));
 builder.Services.AddAutoMapper(typeof(SqlServerProfile));
 
 builder.Services.AddScoped<IPersonService, PersonService>();
 builder.Services.AddScoped<IPersonRepository, PersonRepository>();
+
+builder.Services.AddScoped<IRegionService, RegionService>();
+builder.Services.AddScoped<IRegionRepository, RegionRepository>();
+
+builder.Services.AddScoped<ICityService, CityService>();
+builder.Services.AddScoped<ICityRepository, CityRepository>();
+
+builder.Services.AddScoped<ICommuneService, CommuneService>();
+builder.Services.AddScoped<ICommuneRepository, CommuneRepository>();
 
 builder.Services.AddDbContext<PruebaTecnicaContext>(options =>
                     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -29,7 +39,11 @@ builder.Services.AddDbContext<PruebaTecnicaContext>(options =>
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowOrigin",
-        builder => builder.WithOrigins("http://localhost:5173"));
+        builder => builder
+            .WithOrigins("http://localhost:5173")
+            .AllowAnyMethod() // Permitir todos los métodos HTTP
+            .AllowAnyHeader() // Permitir todos los encabezados HTTP
+            .AllowCredentials()); // Permitir credenciales (si es necesario)
 });
 
 

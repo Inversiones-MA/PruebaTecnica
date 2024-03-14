@@ -1,12 +1,13 @@
-﻿using ApplicationCore.Entities;
+﻿using ApplicationCore.DTO;
+using ApplicationCore.Entities;
 
 namespace ApplicationCore.Interfaces.Services
 {
     public interface IPersonService
     {
-        Task<Guid> Add(Person person);
+        Task<Guid> Add(PersonPostDto personDto);
 
-        Task<List<Person>> GetAll();
+        Task<List<PersonGetDto>> GetAll();
 
     }
 }
