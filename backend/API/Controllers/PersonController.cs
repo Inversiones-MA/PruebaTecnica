@@ -59,11 +59,27 @@ namespace GameStorageApi.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult<Guid>> Update([FromBody] PersonPutDto person)
+        public async Task<ActionResult> Update([FromBody] PersonPutDto person)
         {
             try
             {
                 await _personService.Update(person);
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error inserting game: {ex.Message}");
+                return StatusCode(500, "Internal Server Error");
+            }
+        }
+
+        [HttpDelete]
+        public async Task<ActionResult> Delete(Guid idPerson)
+        {
+            try
+            {
+                await _personService.Delete(idPerson);
 
                 return Ok();
             }

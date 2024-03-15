@@ -11,5 +11,7 @@ namespace ApplicationCore.Interfaces.Services
 
         Task Update(PersonPutDto personDto);
 
+        Task Delete(Guid personId);
+
     }
 }

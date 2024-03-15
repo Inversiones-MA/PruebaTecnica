@@ -6,9 +6,10 @@ interface Props {
     personas: Person[];
     showForm: boolean;
     onEditClick: (id: string) => void;
+    onDeleteClick: (id: string) => void;
 }
 
-const GridPersons: React.FC<Props> = ({ personas, showForm, onEditClick }) => { 
+const GridPersons: React.FC<Props> = ({ personas, showForm, onEditClick, onDeleteClick }) => { 
     return (
         <div className="container">
             <h2>Lista de Personas</h2>
@@ -17,7 +18,7 @@ const GridPersons: React.FC<Props> = ({ personas, showForm, onEditClick }) => {
                     <thead>
                         <tr>
                             <th>Nombre</th>
-                            <th>Run</th>
+                            <th>R.U.N.</th>
                             <th>Acciones</th>
                         </tr>
                     </thead>
@@ -40,6 +41,7 @@ const GridPersons: React.FC<Props> = ({ personas, showForm, onEditClick }) => {
                                         <button
                                             className="btn btn-danger"
                                             disabled={showForm}
+                                            onClick={() => onDeleteClick(persona.id)}
                                         >
                                             Eliminar
                                         </button>

@@ -151,11 +151,14 @@ namespace Infrastructure.Repositories
         }
 
 
-        public void Remove(Person person)
+        public async Task Remove(Guid idPerson)
         {
-            Persona persona = _mapper.Map<Persona>(person);
-            DbSet.Remove(persona);
-            DbContext.SaveChanges();
+            Persona? persona = await DbSet.FindAsync(idPerson);
+            if (persona != null)
+            {
+                DbSet.Remove(persona);
+                await DbContext.SaveChangesAsync();
+            }
         }
 
     }

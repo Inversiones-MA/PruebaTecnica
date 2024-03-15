@@ -66,7 +66,7 @@ const PersonForm: React.FC<Props> = ({ person, onSubmit }) => {
         names: Yup.string().required('El nombre es obligatorio'),
         lastName: Yup.string().required('El apellido es obligatorio'),
         genderCode: Yup.number().oneOf([1, 2], 'El código de género es obligatorio'),
-        birthDate: Yup.string().required('La fecha de nacimiento es obligatoria')
+        birthDate: Yup.date().max(new Date(), 'La fecha de nacimiento no puede estar en el futuro')
     });
 
     const handleSubmit = async (values: Person) => {
@@ -121,12 +121,12 @@ const PersonForm: React.FC<Props> = ({ person, onSubmit }) => {
                     <div className="form-group row mb-2">
                         <div className="col">
                             <label htmlFor="runBody">R.U.N. Cuerpo:</label>
-                            <Field type="number" name="runBody" className="form-control" />
+                            <Field type="number" name="runBody" className="form-control" max={2147483647} />
                             <ErrorMessage name="runBody" component="div" className="text-danger" />
                         </div>
                         <div className="col">
                             <label htmlFor="runDigit">R.U.N. Digito:</label>
-                            <Field type="text" name="runDigit" className="form-control" />
+                            <Field type="text" name="runDigit" className="form-control" maxLength={1} />
                             <ErrorMessage name="runDigit" component="div" className="text-danger" />
                         </div>
                     </div>
@@ -159,11 +159,25 @@ const PersonForm: React.FC<Props> = ({ person, onSubmit }) => {
                     <div className="form-group mb-2">
                         <label className="d-block">Género:</label>
                         <div className="form-check form-check-inline">
-                            <Field type="radio" name="genderCode" value={1} className="form-check-input" id="male" />
+                            <Field
+                                type="radio"
+                                name="genderCode"
+                                value={1}
+                                className="form-check-input"
+                                id="male"
+                                onChange={() => setFieldValue("genderCode", 1)}
+                            />
                             <label htmlFor="male" className="form-check-label mr-3">Masculino</label>
                         </div>
                         <div className="form-check form-check-inline">
-                            <Field type="radio" name="genderCode" value={2} className="form-check-input" id="female" />
+                            <Field
+                                type="radio"
+                                name="genderCode"
+                                value={2}
+                                className="form-check-input"
+                                id="female"
+                                onChange={() => setFieldValue("genderCode", 2)}
+                            />
                             <label htmlFor="female" className="form-check-label">Femenino</label>
                         </div>
                         <ErrorMessage name="genderCode" component="div" className="text-danger" />
@@ -245,7 +259,7 @@ const PersonForm: React.FC<Props> = ({ person, onSubmit }) => {
 
                     <div className="form-group mb-2">
                         <label htmlFor="phone">Teléfono:</label>
-                        <Field type="number" name="phone" className="form-control" />
+                        <Field type="number" name="phone" className="form-control" max={2147483647} />
                         <ErrorMessage name="phone" component="div" className="text-danger" />
                     </div>
 

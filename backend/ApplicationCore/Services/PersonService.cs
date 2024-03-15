@@ -49,7 +49,12 @@ namespace ApplicationCore.Services
             await _personRepository.UpdatePerson(person);
         }
 
-        
+        public async Task Delete(Guid personId)
+        {
+            await _personRepository.Remove(personId);
+        }
+
+
 
     }
 }

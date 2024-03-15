@@ -8,6 +8,6 @@ namespace ApplicationCore.Interfaces.Repositories
         Task<List<Person>> GetAllPersonsAsync();
         Task UpdatePerson(Person person);
 
-        void Remove(Person person);
+        Task Remove(Guid idPerson);
     }
 }

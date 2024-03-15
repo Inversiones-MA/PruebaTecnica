@@ -10,6 +10,7 @@ function App() {
     const [currentPerson, setCurrentPerson] = useState<Person | null>(null);
     const [showForm, setShowForm] = useState<boolean>(false);
     const [alert, setAlert] = useState<string | null>(null);
+    const [showModal, setShowModal] = useState<boolean>(false);
 
     useEffect(() => {
         fetchData();
@@ -27,7 +28,6 @@ function App() {
 
     const onSubmit = async (values: Person) => {
         try {
-            console.log(values);
             if (values.id == null || values.id == "") {
                 const { id, ...postData } = values;
                 const response = await axios.post('https://localhost:7163/person', postData, {
@@ -36,8 +36,8 @@ function App() {
                         'Content-Type': 'application/json'
                     }
                 });
-                console.log('Respuesta del servidor:', response.data);
                 values.id = response.data;
+                values.run = values.runBody + '-' + values.runDigit;
                 setPersonas([
                     ...personas,
                     values
@@ -77,7 +77,43 @@ function App() {
         const person = personas.find(p => p.id == idPerson);
         setCurrentPerson(person);
         setShowForm(true);
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
     }
+
+    const handleGridDeleteBtnClick = (idPerson: string) => {
+        const person = personas.find(p => p.id == idPerson);
+        if (person != null) {
+            setCurrentPerson(person);
+            setShowModal(true);
+        }
+        
+    }
+
+    const handleConfirmDelete = async () => {
+        try {
+            await axios.delete(`https://localhost:7163/person?idPerson=${currentPerson.id}`);
+            let newPersonsList = [...personas];
+            newPersonsList = newPersonsList.filter(p => p.id != currentPerson.id);
+            setPersonas(newPersonsList);
+            setAlert('Registro eliminado correctamente');
+
+        } catch (error) {
+            console.error('Error al eliminando datos:', error);
+            setAlert('Error al eliminar la información');
+        } finally {
+            setCurrentPerson(null);
+            setShowModal(false);
+        }
+    };
+
+    const handleCancelDelete = () => {
+        setShowModal(false);
+        setCurrentPerson(null);
+    };
 
     return (
         <div className="container">
@@ -108,9 +144,34 @@ function App() {
                         personas={personas}
                         showForm={showForm}
                         onEditClick={handleGridEditBtnClick}
+                        onDeleteClick={handleGridDeleteBtnClick}
                     />
                 </div>
             </div>
+            {showModal && (
+                <div className="modal fade show" tabIndex="-1" role="dialog" style={{ display: 'block' }}>
+                    <div className="modal-dialog modal-dialog-centered" role="document">
+                        <div className="modal-content">
+                            <div className="modal-header d-flex justify-content-between bg-light">
+                                <h5 className="modal-title">Confirmar Eliminación</h5>
+                                <button type="button" className="close" onClick={handleCancelDelete}>
+                                    <span>&times;</span>
+                                </button>
+                            </div>
+
+                            <div className="modal-body">
+                                <p>¿Estás seguro de que deseas eliminar este registro?</p>
+                            </div>
+                            <div className="modal-footer">
+                                <button type="button" className="btn btn-danger" onClick={handleConfirmDelete}>Confirmar</button>
+                                <button type="button" className="btn btn-secondary" onClick={handleCancelDelete}>Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+
         </div>
     );
 }
