@@ -9,5 +9,7 @@ namespace ApplicationCore.Interfaces.Services
 
         Task<List<PersonGetDto>> GetAll();
 
+        Task Update(PersonPutDto personDto);
+
     }
 }

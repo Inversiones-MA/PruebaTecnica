@@ -23,7 +23,7 @@ namespace Infrastructure.Repositories
 
         public async Task<List<Commune>> GetByRegionAndCityCodeAsync(short cityCode, short regionCode)
         {
-            var communes = await DbSet.Where(c => c.CiudadCodigo == regionCode && c.RegionCodigo == regionCode).ToListAsync();
+            var communes = await DbSet.Where(c => c.CiudadCodigo == cityCode && c.RegionCodigo == regionCode).ToListAsync();
             return _mapper.Map<List<Commune>>(communes);
         }
 

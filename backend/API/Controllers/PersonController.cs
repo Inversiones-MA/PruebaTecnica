@@ -28,11 +28,16 @@ namespace GameStorageApi.Controllers
             {
                 Guid idNew = await _personService.Add(person);
 
+                if (idNew == Guid.Empty)
+                {
+                    return BadRequest("Invalid ID returned from the service.");
+                }
+
                 return Ok(idNew);
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Error inserting game: {ex.Message}");
+                _logger.LogError($"Error inserting person: {ex.Message}");
                 return StatusCode(500, "Internal Server Error");
             }
         }
@@ -53,6 +58,21 @@ namespace GameStorageApi.Controllers
             }
         }
 
+        [HttpPut]
+        public async Task<ActionResult<Guid>> Update([FromBody] PersonPutDto person)
+        {
+            try
+            {
+                await _personService.Update(person);
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error inserting game: {ex.Message}");
+                return StatusCode(500, "Internal Server Error");
+            }
+        }
 
 
     }

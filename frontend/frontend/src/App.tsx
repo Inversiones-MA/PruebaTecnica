@@ -7,7 +7,9 @@ import { Person } from './types';
 
 function App() {
     const [personas, setPersonas] = useState<Person[]>([]);
-    const [currentPerson, setCurrentPerson] = useState<Person | null>(null); // Establece el tipo de currentPerson como Person | null
+    const [currentPerson, setCurrentPerson] = useState<Person | null>(null);
+    const [showForm, setShowForm] = useState<boolean>(false);
+    const [alert, setAlert] = useState<string | null>(null);
 
     useEffect(() => {
         fetchData();
@@ -17,13 +19,13 @@ function App() {
         try {
             const response = await axios.get<Person[]>('https://localhost:7163/person');
             setPersonas(response.data);
-            console.log(response.data);
         } catch (error) {
             console.error('Error al obtener datos:', error);
+            setAlert('Error al obtener datos');
         }
     };
 
-    const onSubmit = async (values: Person) => { // Establece el tipo de values como Person
+    const onSubmit = async (values: Person) => {
         try {
             console.log(values);
             if (values.id == null || values.id == "") {
@@ -36,38 +38,81 @@ function App() {
                 });
                 console.log('Respuesta del servidor:', response.data);
                 values.id = response.data;
-                values.run = values.runBody + '-' + values.runDigit;
                 setPersonas([
                     ...personas,
                     values
-                ])
+                ]);
+                setAlert('Persona agregada correctamente');
+            } else {
+                await axios.put('https://localhost:7163/person', values, {
+                    headers: {
+                        'Accept': 'text/plain',
+                        'Content-Type': 'application/json'
+                    }
+                });
+                const editedPersonIndex = personas.findIndex(p => p.id == values.id);
+                const newPersonsList = [...personas];
+                newPersonsList[editedPersonIndex] = values;
+                setPersonas(newPersonsList);
+                setAlert('Persona actualizada correctamente');
             }
+            setCurrentPerson(null);
+            setShowForm(false);
         } catch (error) {
             console.error('Error al obtener datos:', error);
+            setAlert('Error al guardando la información');
         }
     };
 
+    const handleAddNewPersonClick = () => {
+        if (!showForm) {
+            setShowForm(true);
+        } else {
+            setCurrentPerson(null);
+            setShowForm(false);
+        }
+    }
+
+    const handleGridEditBtnClick = (idPerson: string) => {
+        const person = personas.find(p => p.id == idPerson);
+        setCurrentPerson(person);
+        setShowForm(true);
+    }
+
     return (
         <div className="container">
-            <div className="row justify-content-center mt-5">
-                <div className="col-md-8">
-                    <h2 className="text-center mb-4">Agregar/Edit Person</h2>
-                    <PersonForm person={currentPerson} onSubmit={onSubmit} />
+            {alert && (
+                <div className={`alert alert-${alert.includes('Error') ? 'danger' : 'success'} alert-dismissible`} role="alert">
+                    <button type="button" className="btn-close" aria-label="Close" onClick={() => setAlert(null)}></button>
+                    {alert}
+                </div>
+            )}
+            {showForm && (
+                <div className="row justify-content-center mt-3">
+                    <div className="col-md-8">
+                        <h2 className="text-center mb-4">{currentPerson == null ? "Agregar persona" : "Actualizar Persona"}</h2>
+                        <PersonForm person={currentPerson} onSubmit={onSubmit} />
+                    </div>
+                </div>
+            )}
+            <div className="row mt-3">
+                <div className="col-md-12 text-left">
+                    <button
+                        className={!showForm ? "btn btn-success" : "btn btn-danger"}
+                        onClick={handleAddNewPersonClick}>{!showForm ? "Agregar Nueva Persona" : "Cancelar"}</button>
                 </div>
             </div>
-            <div className="row mt-5">
-                <div className="col-md-12 text-left"> {/* Cambia text-right a text-left */}
-                    <button className="btn btn-primary">Agregar Nueva Persona</button>
-                </div>
-            </div>
-            <div className="row mt-5">
+            <div className="row mt-3">
                 <div className="col-md-12">
-                    <GridPersons personas={personas} />
+                    <GridPersons
+                        personas={personas}
+                        showForm={showForm}
+                        onEditClick={handleGridEditBtnClick}
+                    />
                 </div>
             </div>
         </div>
     );
-
 }
 
 export default App;

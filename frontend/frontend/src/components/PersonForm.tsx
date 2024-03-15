@@ -5,7 +5,7 @@ import axios from 'axios';
 import { Person, Region, City, Commune } from '../types';
 
 interface Props {
-    person: Person;
+    person: Person | null;
     onSubmit: (values: Person) => void;
 }
 
@@ -25,7 +25,22 @@ const PersonForm: React.FC<Props> = ({ person, onSubmit }) => {
         };
 
         fetchRegions();
+
+        if (person != null) {
+            updateSelectValues(person);
+        }
     }, []);
+
+    const updateSelectValues = async (p:Person) => {
+        if (p.regionCode) {
+            await handleRegionChange(p.regionCode);
+
+            if (p.cityCode) {
+                await handleCityChange(p.regionCode, p.cityCode);
+            }
+        }
+        
+    }
 
     const initialValues: Person = person || {
         id: '',
@@ -51,9 +66,7 @@ const PersonForm: React.FC<Props> = ({ person, onSubmit }) => {
         names: Yup.string().required('El nombre es obligatorio'),
         lastName: Yup.string().required('El apellido es obligatorio'),
         genderCode: Yup.number().oneOf([1, 2], 'El código de género es obligatorio'),
-        birthDate: Yup.string().required('La fecha de nacimiento es obligatoria'),
-        regionCode: Yup.number().required('La región es obligatoria'),
-        cityCode: Yup.number().required('La ciudad es obligatoria')
+        birthDate: Yup.string().required('La fecha de nacimiento es obligatoria')
     });
 
     const handleSubmit = async (values: Person) => {
@@ -93,6 +106,8 @@ const PersonForm: React.FC<Props> = ({ person, onSubmit }) => {
             console.error('Error al obtener las ciudades:', error);
         }
     };
+
+    
 
     return (
         <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>

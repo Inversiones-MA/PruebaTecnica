@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\app.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\src\\components\\personform.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\components\\personform.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\src\\components\\gridpersons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\components\\gridpersons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\src\\types.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\types.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\src\\components\\gridpersons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\components\\gridpersons.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\frontend\\frontend\\src\\components\\personform.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{AEADA474-75B4-4FEF-9B0B-9E654286A446}|frontend\\frontend.esproj|solutionrelative:frontend\\src\\components\\personform.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -140,20 +140,20 @@
               "RelativeDocumentMoniker": "frontend\\src\\types.tsx",
               "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\types.tsx",
               "RelativeToolTip": "frontend\\src\\types.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-03-14T17:53:44.689Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "PersonForm.tsx",
               "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\components\\PersonForm.tsx",
               "RelativeDocumentMoniker": "frontend\\src\\components\\PersonForm.tsx",
               "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\components\\PersonForm.tsx",
               "RelativeToolTip": "frontend\\src\\components\\PersonForm.tsx",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAAwCQAAAASAAAA",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAAwEQAAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-03-14T16:44:08.929Z",
               "EditorCaption": ""
@@ -166,20 +166,20 @@
               "RelativeDocumentMoniker": "frontend\\src\\App.tsx",
               "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\App.tsx",
               "RelativeToolTip": "frontend\\src\\App.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAABEAAAA",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAAwF4AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-03-14T06:05:59.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "GridPersons.tsx",
               "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\components\\GridPersons.tsx",
               "RelativeDocumentMoniker": "frontend\\src\\components\\GridPersons.tsx",
               "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\frontend\\frontend\\src\\components\\GridPersons.tsx",
               "RelativeToolTip": "frontend\\src\\components\\GridPersons.tsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-03-14T06:02:40.599Z",
               "EditorCaption": ""

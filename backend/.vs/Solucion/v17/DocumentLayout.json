@@ -11,6 +11,26 @@
       "RelativeMoniker": "D:0:0:{C22BC36E-FD13-489D-9875-59540F12E8B8}|API\\API.csproj|solutionrelative:api\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C22BC36E-FD13-489D-9875-59540F12E8B8}|API\\API.csproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\backend\\api\\controllers\\communecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C22BC36E-FD13-489D-9875-59540F12E8B8}|API\\API.csproj|solutionrelative:api\\controllers\\communecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C7F06F-9260-41C9-B06D-55D712BFD6BA}|ApplicationCore\\ApplicationCore.csproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\backend\\applicationcore\\services\\regionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C7F06F-9260-41C9-B06D-55D712BFD6BA}|ApplicationCore\\ApplicationCore.csproj|solutionrelative:applicationcore\\services\\regionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C7F06F-9260-41C9-B06D-55D712BFD6BA}|ApplicationCore\\ApplicationCore.csproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\backend\\applicationcore\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C7F06F-9260-41C9-B06D-55D712BFD6BA}|ApplicationCore\\ApplicationCore.csproj|solutionrelative:applicationcore\\services\\personservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8C7F06F-9260-41C9-B06D-55D712BFD6BA}|ApplicationCore\\ApplicationCore.csproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\backend\\applicationcore\\interfaces\\services\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8C7F06F-9260-41C9-B06D-55D712BFD6BA}|ApplicationCore\\ApplicationCore.csproj|solutionrelative:applicationcore\\interfaces\\services\\ipersonservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E81B5F1-AC43-43B2-96AD-A1E4ABC4A326}|Infrastructure\\Infrastructure.csproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\backend\\infrastructure\\repositories\\communerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E81B5F1-AC43-43B2-96AD-A1E4ABC4A326}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\communerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C22BC36E-FD13-489D-9875-59540F12E8B8}|API\\API.csproj|c:\\users\\danie\\source\\repos\\pruebatecnica\\backend\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C22BC36E-FD13-489D-9875-59540F12E8B8}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -22,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 27,
+          "SelectedChildIndex": 32,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,7 +150,72 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegionService.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\backend\\ApplicationCore\\Services\\RegionService.cs",
+              "RelativeDocumentMoniker": "ApplicationCore\\Services\\RegionService.cs",
+              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\backend\\ApplicationCore\\Services\\RegionService.cs",
+              "RelativeToolTip": "ApplicationCore\\Services\\RegionService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T23:30:05.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IPersonService.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\backend\\ApplicationCore\\Interfaces\\Services\\IPersonService.cs",
+              "RelativeDocumentMoniker": "ApplicationCore\\Interfaces\\Services\\IPersonService.cs",
+              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\backend\\ApplicationCore\\Interfaces\\Services\\IPersonService.cs",
+              "RelativeToolTip": "ApplicationCore\\Interfaces\\Services\\IPersonService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T23:05:51.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CommuneRepository.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\backend\\Infrastructure\\Repositories\\CommuneRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\CommuneRepository.cs",
+              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\backend\\Infrastructure\\Repositories\\CommuneRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\CommuneRepository.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAwwB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T22:53:05.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PersonService.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\backend\\ApplicationCore\\Services\\PersonService.cs",
+              "RelativeDocumentMoniker": "ApplicationCore\\Services\\PersonService.cs",
+              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\backend\\ApplicationCore\\Services\\PersonService.cs",
+              "RelativeToolTip": "ApplicationCore\\Services\\PersonService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwB0AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T22:12:55.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "CommuneController.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\backend\\API\\Controllers\\CommuneController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\CommuneController.cs",
+              "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\backend\\API\\Controllers\\CommuneController.cs",
+              "RelativeToolTip": "API\\Controllers\\CommuneController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBEAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-14T22:52:10.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\backend\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
@@ -138,8 +223,7 @@
               "RelativeToolTip": "API\\Program.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAAgwCwAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-14T20:35:31.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-14T20:35:31.305Z"
             },
             {
               "$type": "Document",
@@ -149,7 +233,7 @@
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\PersonRepository.cs",
               "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\backend\\Infrastructure\\Repositories\\PersonRepository.cs",
               "RelativeToolTip": "Infrastructure\\Repositories\\PersonRepository.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAD4vywAAAAQAAAA",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAawGgAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-14T20:19:06.443Z",
               "EditorCaption": ""
@@ -162,7 +246,7 @@
               "RelativeDocumentMoniker": "API\\Controllers\\PersonController.cs",
               "ToolTip": "C:\\Users\\danie\\source\\repos\\PruebaTecnica\\backend\\API\\Controllers\\PersonController.cs",
               "RelativeToolTip": "API\\Controllers\\PersonController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAEwBsAAAAMAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAawEAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-14T17:34:05.512Z",
               "EditorCaption": ""

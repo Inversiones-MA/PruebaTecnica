@@ -3,10 +3,12 @@ import axios from 'axios';
 import { Person } from './types';
 
 interface Props {
-    personas: Person[]; // Definir el tipo de la variable personas como un array de tipo Person
+    personas: Person[];
+    showForm: boolean;
+    onEditClick: (id: string) => void;
 }
 
-const GridPersons: React.FC<Props> = ({ personas }) => { // Recibir personas como prop
+const GridPersons: React.FC<Props> = ({ personas, showForm, onEditClick }) => { 
     return (
         <div className="container">
             <h2>Lista de Personas</h2>
@@ -15,7 +17,6 @@ const GridPersons: React.FC<Props> = ({ personas }) => { // Recibir personas com
                     <thead>
                         <tr>
                             <th>Nombre</th>
-                            <th>Apellido</th>
                             <th>Run</th>
                             <th>Acciones</th>
                         </tr>
@@ -23,13 +24,30 @@ const GridPersons: React.FC<Props> = ({ personas }) => { // Recibir personas com
                     <tbody>
                         {personas.map(persona => (
                             <tr key={persona.id}>
-                                <td>{persona.names}</td>
-                                <td>{persona.lastName}</td>
-                                <td>{persona.run}</td>
-                                <td>
-                                    <button className="btn btn-primary mr-2">Editar</button>
-                                    <button className="btn btn-danger">Eliminar</button>
+                                <td>{persona.names + ' ' + persona.lastName + ' ' + persona.motherLastName}</td>
+                                <td>{persona.runBody + '-' + persona.runDigit}</td>
+                                <td className="d-flex align-items-center gap-4">
+                                    <div>
+                                        <button
+                                            className="btn btn-primary"
+                                            disabled={showForm}
+                                            onClick={() => onEditClick(persona.id)}
+                                        >
+                                            Editar
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button
+                                            className="btn btn-danger"
+                                            disabled={showForm}
+                                        >
+                                            Eliminar
+                                        </button>
+                                    </div>
                                 </td>
+
+
+
                             </tr>
                         ))}
                     </tbody>
